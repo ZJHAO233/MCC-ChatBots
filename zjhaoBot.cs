@@ -11,7 +11,8 @@ class SystemMessageQuitBot : ChatBot
         "ZJHAO",
         "_xiaorongyu(小鱼)",
         "_xiaorongyu",
-        "FurryFanson"
+        "FurryFanson",
+        "LuoXiaoLei"
     };
 
     private readonly List<string> ignoredPlayerIds = new List<string>
@@ -449,4 +450,5 @@ class SystemMessageQuitBot : ChatBot
             }
         });
     }
+
 }
