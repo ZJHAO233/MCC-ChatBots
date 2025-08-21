@@ -1,0 +1,166 @@
+# 此为通用 Git 忽略文件模板，请根据您的项目需求调整
+# 以 '#' 开头的行是注释
+
+# 首先忽略所有文件，但允许目录（以便后续规则可以匹配目录内的文件）
+# 这行通常不需要，但某些情况下有用
+# *
+# !*/
+# !.gitignore
+
+# --- 操作系统生成的文件 ---
+# Windows
+# 文件夹
+[Dd]esktop.ini
+[Tt]humbs.db
+$RECYCLE.BIN/
+*.stackdump
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# 目录
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.iceberg
+.com.apple.timemachine.donotpresent
+
+# 文件
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+
+# --- 常见语言环境与包管理 ---
+
+# 日志文件
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# 运行时数据
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# 依赖目录 (几乎所有语言的依赖都忽略，除非你选择提交它们)
+node_modules/
+jspm_packages/
+/web_modules/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+.venv/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+# Ruby
+/.bundle
+/vendor/bundle
+/lib/bundle
+*.gem
+# Java
+/target/
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+# C#
+/[Bb]in/
+/[Oo]bj/
+*.suo
+*.user
+*.userprefs
+
+# --- 项目构建输出 ---
+build/
+dist/
+out/
+*.tsbuildinfo
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+
+# --- 编辑器与IDE ---
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains (IntelliJ IDEA, WebStorm, PyCharm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# Eclipse
+.settings/
+.classpath
+.project
+.metadata
+
+# --- 环境变量与敏感信息 ---
+# 永远不要将敏感信息提交到Git！
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.venv
+
+# 配置文件（通常包含机器特定设置）
+config/*.local.xml
+appsettings.*.json # 例如 appsettings.Development.json
+
+# --- 其他 ---
+# 临时文件
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# 保存的文件
+.saves
+
+# 覆盖率报告
+coverage/
+*.lcov
+
+# 大型数据文件
+*.data
+*.data.*
+*.sql
+*.sqlite
+
+# 压缩包
+*.gz
+*.7z
